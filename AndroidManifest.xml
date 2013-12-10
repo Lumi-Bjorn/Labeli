@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.labeli"
+    android:versionCode="2"
+    android:versionName="1.01" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_transparent"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+         >
+        <activity
+            android:name="com.labeli.activities.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.labeli.activities.ProductManagementActivity"
+            android:label="@string/title_activity_gestion" >
+        </activity>
+        <activity
+            android:name="com.labeli.activities.AddProductActivity"
+            android:label="@string/title_activity_add_product">
+        </activity>
+        <activity
+            android:name="com.labeli.activities.SelectionActivity"
+            android:label="@string/title_activity_selection">
+        </activity>
+        <activity
+            android:name="com.labeli.activities.ProductInformationActivity"
+            android:label="@string/title_activity_product_information">
+        </activity>
+    </application>
+
+</manifest>

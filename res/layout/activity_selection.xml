@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layoutImgLocal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@+id/imgLocal"
+            android:layout_width="match_parent"
+            android:layout_height="91dp"
+            android:contentDescription="@string/img_local"
+            android:padding="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/vert" />
+
+        <TextView
+            android:id="@+id/imgLocalText"
+            style="@style/textBtnAccueil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgLocal"
+            android:layout_alignLeft="@+id/imgLocal"
+            android:layout_alignRight="@+id/imgLocal"
+            android:layout_alignTop="@+id/imgLocal"
+            android:layout_margin="1dp"
+            android:fontFamily="Roboto"
+            android:gravity="center"
+            android:text="@string/text_local_state_open" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutImgProducts"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@+id/imgProducts"
+            android:layout_width="match_parent"
+            android:layout_height="91dp"
+            android:contentDescription="@string/img_products"
+            android:padding="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bleu" />
+
+        <TextView
+            android:id="@+id/imgProductsText"
+            style="@style/textBtnAccueil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgProducts"
+            android:layout_alignLeft="@+id/imgProducts"
+            android:layout_alignRight="@+id/imgProducts"
+            android:layout_alignTop="@+id/imgProducts"
+            android:layout_margin="1dp"
+            android:fontFamily="Roboto"
+            android:gravity="center"
+            android:text="@string/text_produits" />
+    </RelativeLayout>
+
+</LinearLayout>

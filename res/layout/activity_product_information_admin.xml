@@ -1,0 +1,85 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollViewAddProductActivity"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+
+        <TextView
+            android:id="@+id/textViewInfosCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="77dp"
+            android:text="@string/text_nb_produit"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textViewInfosName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewInfosName"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="14dp"
+            android:text="@string/text_produit"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/textViewInfosProductStock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textViewInfosCount"
+            android:layout_alignBottom="@+id/textViewInfosCount"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/textViewInfosCount"
+            android:text="@string/text_produit_stock"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textViewAddProductPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewInfosCount"
+            android:layout_below="@+id/textViewInfosCount"
+            android:text="@string/text_prix"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textViewInfosPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textViewAddProductPrice"
+            android:layout_alignBottom="@+id/textViewAddProductPrice"
+            android:layout_toRightOf="@+id/textViewAddProductPrice"
+            android:text="@string/text_nb_produit"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/btnInfos_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textViewInfosPrice"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/custom_buttons_red"
+            android:text="@string/delete"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnInfos_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnInfos_delete"
+            android:layout_alignBottom="@+id/btnInfos_delete"
+            android:layout_alignLeft="@+id/textViewAddProductPrice"
+            android:background="@drawable/custom_buttons_green"
+            android:text="@string/add" />
+    </RelativeLayout>
+
+</ScrollView>
